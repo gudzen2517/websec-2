@@ -60,6 +60,9 @@
 - передача данных через WebSocket 
 - защита от читерства
 
-
+#Последовательность запуска:
+1) Из express-react-app запустить сервер "node server.js"
+2) Из express-react-app/client запустить веб-сайт npm start
+   
 
 
