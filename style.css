@@ -1,0 +1,52 @@
+#map 
+{
+    margin-left: 45%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+#myInput
+{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 50%;
+    height: 54%; 
+    background-color: white;
+}
+
+#submit
+{
+    width: 16%;
+    height: 33%
+}
+
+body
+{
+    background-image: url('./img/back.png');
+    display: block;
+}
+
+nav
+{
+    max-width: 50%;
+    height: 10%;
+}
+
+.tr-list
+{
+    text-align: center;
+}
+
+body > div > a
+{
+    margin-left: 45.5%;
+    color: black;
+}
+
+#name-stop
+{
+    margin: left 15% top 20%;
+    text-align: center;
+}

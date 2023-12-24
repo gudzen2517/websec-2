@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MAPS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
+</head>
+
+
+<body>
+    <div class="stop-context">
+        <h3 id="name_stop"></h3>
+        <div class="tr-list">
+            <ul class="stops-list" id="stops-list">
+            </ul>
+        </div>
+        <a href="main_map.html">RETURN</a>
+    </div>
+    
+    <script>
+        var qs = (new URL(document.location)).searchParams;
+        var id = qs.get("hullNo");
+        var h = document.getElementById('name_stop');
+        if (void 0 != h.innerText)
+            h.innerText = qs.get("name_stop");
+        else
+            h.textContent = qs.get("name_stop");
+        Route(id, document.getElementById('stops-list'))
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>MAPS</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
+    <script src="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.js"></script>
+  </head>
+
+  <body>
+    <nav class="nav">
+        <form action="/action_page.php">
+            <div class="autocomplete">
+              <input id="myInput" type="text" placeholder="Search">
+              <button type="submit" id="submit" onclick="searchstop(); return false;">Search</button>
+            </div>
+        </form>
+    </nav>
+    <div id="map"></div>
+  </body>
+</html>
